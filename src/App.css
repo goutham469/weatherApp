@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  /* width: 100vw;
+  height: 100vh; */
   min-height: 100vh;
+  height: fit-content;
+  background-image: url('./assets/backgroundImage.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.todayForecast{
+  margin-top: 20px;
+  padding: 5px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 80px;
+  width: 300px;
+  overflow-x: scroll;
+  background-color: rgb(42, 103, 209);
+  border-radius: 10px;
+}
+.todayForecast::-webkit-scrollbar{
+  height: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.todayForecast2{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 5px;
+  display: flex;
+  height: 160px;
+  width: 300px;
+  overflow-x: scroll;
+  background-color: rgb(42, 103, 209);
+  border-radius: 10px;
+}
+.todayForecast2::-webkit-scrollbar{
+  height: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.LongTermWeatherForecast{
+  height: 400px;
+  overflow-y: scroll;
+  color: black;
+}
+.LongTermWeatherForecast::-webkit-scrollbar{
+  height: 0px;
+}
+.DayComponent{
+  background-color: rgb(90, 143, 190);
+  margin: 20px;
+  padding: 10px;
 }
